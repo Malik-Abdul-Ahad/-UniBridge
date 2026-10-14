@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UniBridge — Start university with confidence.</title>
+  <meta name="description" content="UniBridge helps students prepare for university before day one and build new habits after joining. A sociology assignment prototype about socialization and resocialization.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌉</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to main content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="#home" data-scroll="home">
+        <span class="brand-mark" aria-hidden="true">U</span>
+        <span class="brand-text">Uni<em>Bridge</em></span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home" data-scroll="home">Home</a></li>
+          <li><a href="#prepare" data-scroll="prepare">Prepare Before University</a></li>
+          <li><a href="#after-joining" data-scroll="after-joining">After Joining</a></li>
+          <li><a href="#campus" data-scroll="campus">Campus Guide</a></li>
+          <li><a href="#planner" data-scroll="planner">Study Planner</a></li>
+          <li><a href="#about-project" data-scroll="about-project">About Project</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn btn-ghost btn-sm" id="reset-demo" type="button">Reset Demo</button>
+          <a class="btn btn-primary btn-sm" href="#prepare" data-scroll="prepare">Open Demo</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ SECTION 1: HERO / HOME ============ -->
+    <section class="hero" id="home">
+      <div class="blob blob-one" aria-hidden="true"></div>
+      <div class="blob blob-two" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">🎓 Anticipatory socialization &amp; resocialization</span>
+          <h1>Start university with confidence.</h1>
+          <p class="lead">
+            UniBridge helps students prepare for university before day one and build
+            new habits after joining.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary btn-lg" type="button" data-scroll="prepare">Start Preparing</button>
+            <button class="btn btn-outline btn-lg" type="button" data-scroll="dashboard">Explore the Prototype</button>
+          </div>
+          <ul class="hero-points">
+            <li><span aria-hidden="true">✅</span> 16 preparation steps</li>
+            <li><span aria-hidden="true">✅</span> First-week plan</li>
+            <li><span aria-hidden="true">✅</span> Mentor support</li>
+          </ul>
+        </div>
+
+        <!-- Dashboard preview card -->
+        <div class="dash-card" id="dashboard-card">
+          <div class="dash-head">
+            <span class="badge badge-blue">Student transition support</span>
+            <span class="dash-dots" aria-hidden="true">•••</span>
+          </div>
+
+          <div class="dash-main">
+            <div class="ring" style="--value: 60;" aria-hidden="true">
+              <span class="ring-value">60%</span>
+            </div>
+            <div>
+              <p class="dash-label">Preparation Progress</p>
+              <p class="dash-value">60% complete</p>
+              <p class="dash-note">6 of 10 preview steps finished</p>
+            </div>
+          </div>
+
+          <ul class="dash-rows">
+            <li>
+              <span class="dash-ico ico-blue" aria-hidden="true">📋</span>
+              <div>
+                <p class="dash-label">Next Task</p>
+                <p class="dash-strong">Learn how to contact a teacher</p>
+              </div>
+            </li>
+            <li>
+              <span class="dash-ico ico-violet" aria-hidden="true">🗓️</span>
+              <div>
+                <p class="dash-label">First Week Plan</p>
+                <p class="dash-strong">3 tasks remaining</p>
+              </div>
+            </li>
+            <li>
+              <span class="dash-ico ico-green" aria-hidden="true">📈</span>
+              <div>
+                <p class="dash-label">Confidence Level</p>
+                <p class="dash-strong">Improving</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 2: PROJECT INTRODUCTION ============ -->
+    <section class="section" id="intro">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">The problem</span>
+          <h2>Moving to university is a big change.</h2>
+          <p class="section-desc">
+            College and university do not work in exactly the same way. At university,
+            students must manage more responsibilities, communicate with new people,
+            follow new rules, and study more independently. UniBridge helps students
+            take this transition step by step.
+          </p>
+        </div>
+
+        <div class="card-grid three">
+          <article class="card mini-card">
+            <span class="mini-ico ico-blue" aria-hidden="true">💡</span>
+            <h3>Learn what to expect</h3>
+            <p>Understand classes, rules, and campus life before your first day.</p>
+          </article>
+          <article class="card mini-card">
+            <span class="mini-ico ico-violet" aria-hidden="true">🛠️</span>
+            <h3>Build better habits</h3>
+            <p>Replace old college habits with routines that work at university.</p>
+          </article>
+          <article class="card mini-card">
+            <span class="mini-ico ico-green" aria-hidden="true">🤝</span>
+            <h3>Feel connected and supported</h3>
+            <p>Meet classmates, mentors, and teachers with less stress.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 3: TWO-STAGE SOLUTION ============ -->
+    <section class="section section-soft" id="solution">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">The solution</span>
+          <h2>Two stages, one smooth transition.</h2>
+          <p class="section-desc">
+            Prepare before your first day and adjust comfortably after joining.
+          </p>
+        </div>
+
+        <div class="card-grid two">
+          <!-- Card 1 -->
+          <article class="card stage-card stage-blue">
+            <div class="stage-top">
+              <span class="stage-ico" aria-hidden="true">🌤️</span>
+              <span class="badge badge-blue">Anticipatory Socialization</span>
+            </div>
+            <h3>Before University</h3>
+            <p>
+              Prepare for university before your first day by learning its rules,
+              routines, and expectations.
+            </p>
+            <ul class="tick-list">
+              <li>Campus preparation</li>
+              <li>Teacher communication</li>
+              <li>Digital system guidance</li>
+              <li>Study planning</li>
+              <li>Social preparation</li>
+            </ul>
+            <button class="btn btn-primary" type="button" data-scroll="prepare">View Preparation</button>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card stage-card stage-violet">
+            <div class="stage-top">
+              <span class="stage-ico" aria-hidden="true">🌱</span>
+              <span class="badge badge-violet">Resocialization</span>
+            </div>
+            <h3>After Joining</h3>
+            <p>
+              Replace old college habits with new university habits through regular
+              support and practical tasks.
+            </p>
+            <ul class="tick-list">
+              <li>First-week plan</li>
+              <li>Deadline reminders</li>
+              <li>Mentor guidance</li>
+              <li>Group activities</li>
+              <li>Personal progress</li>
+            </ul>
+            <button class="btn btn-violet" type="button" data-scroll="after-joining">View Adjustment Plan</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 4: PREPARATION CHECKLIST ============ -->
+    <section class="section" id="prepare">
+      <span id="dashboard" class="section-anchor" aria-hidden="true"></span>
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Anticipatory socialization</span>
+          <h2>Prepare before your first day.</h2>
+          <p class="section-desc">Complete these small steps before entering university.</p>
+
+          <div class="progress-box">
+            <div class="progress-meta">
+              <span class="progress-title">Preparation progress</span>
+              <span class="progress-count" id="prepare-count" aria-live="polite">0 of 16 completed · 0%</span>
+            </div>
+            <div class="progress-track" role="progressbar" id="prepare-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Preparation checklist progress">
+              <span class="progress-fill" id="prepare-fill"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="check-groups" id="prepare-list">
+          <div class="card check-group">
+            <h3><span aria-hidden="true">📚</span> Academic Preparation</h3>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-a1">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Understand how university grading works.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-a2">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Learn about academic honesty and plagiarism.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-a3">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Create a weekly study routine.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-a4">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Learn how to manage assignments.</span>
+            </label>
+          </div>
+
+          <div class="card check-group">
+            <h3><span aria-hidden="true">💻</span> Digital Preparation</h3>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-d1">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Learn how to use the university portal.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-d2">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Set up university email.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-d3">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Learn how to submit assignments online.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-d4">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Learn how to check announcements.</span>
+            </label>
+          </div>
+
+          <div class="card check-group">
+            <h3><span aria-hidden="true">🗺️</span> Campus Preparation</h3>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-c1">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Explore the campus map.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-c2">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Find your department.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-c3">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Find the library.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-c4">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Find the student affairs office.</span>
+            </label>
+          </div>
+
+          <div class="card check-group">
+            <h3><span aria-hidden="true">👋</span> Social Preparation</h3>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-s1">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Learn how to introduce yourself.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-s2">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Practise asking a teacher a question.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-s3">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Join an official student group.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="prepare" data-id="prep-s4">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Connect with a senior student.</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 5: ORIENTATION LESSONS ============ -->
+    <section class="section section-soft" id="lessons">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Orientation</span>
+          <h2>Short lessons that make university feel familiar.</h2>
+          <p class="section-desc">Pick a lesson, read it in two minutes, and mark it complete.</p>
+        </div>
+
+        <div class="card-grid four" id="lesson-grid">
+          <article class="card lesson-card" data-lesson="lesson-1">
+            <div class="lesson-top">
+              <span class="lesson-ico" aria-hidden="true">📚</span>
+              <span class="status-pill" data-status>Not started</span>
+            </div>
+            <h3>How University Classes Work</h3>
+            <p>Lectures, tutorials, and the weekly timetable explained in simple steps.</p>
+            <div class="lesson-foot">
+              <span class="lesson-time" aria-hidden="true">⏱️</span>
+              <span class="lesson-time">Estimated time: 4 min</span>
+            </div>
+            <button class="btn btn-outline btn-block" type="button" data-open-lesson="lesson-1">Start Lesson</button>
+          </article>
+
+          <article class="card lesson-card" data-lesson="lesson-2">
+            <div class="lesson-top">
+              <span class="lesson-ico" aria-hidden="true">👩‍🏫</span>
+              <span class="status-pill" data-status>Not started</span>
+            </div>
+            <h3>Communicating with Teachers</h3>
+            <p>How to write a clear, respectful message and use office hours well.</p>
+            <div class="lesson-foot">
+              <span class="lesson-time" aria-hidden="true">⏱️</span>
+              <span class="lesson-time">Estimated time: 3 min</span>
+            </div>
+            <button class="btn btn-outline btn-block" type="button" data-open-lesson="lesson-2">Start Lesson</button>
+          </article>
+
+          <article class="card lesson-card" data-lesson="lesson-3">
+            <div class="lesson-top">
+              <span class="lesson-ico" aria-hidden="true">📝</span>
+              <span class="status-pill" data-status>Not started</span>
+            </div>
+            <h3>Managing Assignments</h3>
+            <p>Break big tasks into small steps and never miss a deadline again.</p>
+            <div class="lesson-foot">
+              <span class="lesson-time" aria-hidden="true">⏱️</span>
+              <span class="lesson-time">Estimated time: 5 min</span>
+            </div>
+            <button class="btn btn-outline btn-block" type="button" data-open-lesson="lesson-3">Start Lesson</button>
+          </article>
+
+          <article class="card lesson-card" data-lesson="lesson-4">
+            <div class="lesson-top">
+              <span class="lesson-ico" aria-hidden="true">🤝</span>
+              <span class="status-pill" data-status>Not started</span>
+            </div>
+            <h3>Working with New Classmates</h3>
+            <p>Start conversations, join group work, and build a friendly circle.</p>
+            <div class="lesson-foot">
+              <span class="lesson-time" aria-hidden="true">⏱️</span>
+              <span class="lesson-time">Estimated time: 4 min</span>
+            </div>
+            <button class="btn btn-outline btn-block" type="button" data-open-lesson="lesson-4">Start Lesson</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 6: CAMPUS GUIDE ============ -->
+    <section class="section campus-section" id="campus">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Campus guide</span>
+          <h2>Know your campus before you need it.</h2>
+          <p class="section-desc">A simple guide to important university locations.</p>
+          <p class="soft-note" id="campus-count" aria-live="polite">0 of 8 locations visited</p>
+        </div>
+
+        <div class="campus-grid" id="campus-grid">
+          <article class="card campus-card">
+            <span class="campus-ico" aria-hidden="true">🚪</span>
+            <h3>Main Gate</h3>
+            <p>The main entrance. Check visiting hours and security rules here.</p>
+            <button class="btn btn-outline btn-block" type="button" data-visit="spot-1" data-name="Main Gate">Mark as Visited</button>
+          </article>
+          <article class="card campus-card">
+            <span class="campus-ico" aria-hidden="true">💻</span>
+            <h3>Computer Science Department</h3>
+            <p>Your department office, classrooms, and academic advisor.</p>
+            <button class="btn btn-outline btn-block" type="button" data-visit="spot-2" data-name="Computer Science Department">Mark as Visited</button>
+          </article>
+          <article class="card campus-card">
+            <span class="campus-ico" aria-hidden="true">📖</span>
+            <h3>Library</h3>
+            <p>Quiet study spaces, borrowing desks, and online journals.</p>
+            <button class="btn btn-outline btn-block" type="button" data-visit="spot-3" data-name="Library">Mark as Visited</button>
+          </article>
+          <article class="card campus-card">
+            <span class="campus-ico" aria-hidden="true">🖥️</span>
+            <h3>Computer Laboratory</h3>
+            <p>Lab sessions, printing services, and software help.</p>
+            <button class="btn btn-outline btn-block" type="button" data-visit="spot-4" data-name="Computer Laboratory">Mark as Visited</button>
+          </article>
+          <article class="card campus-card">
+            <span class="campus-ico" aria-hidden="true">🏛️</span>
+            <h3>Student Affairs Office</h3>
+            <p>Official documents, support services, and student welfare.</p>
+            <button class="btn btn-outline btn-block" type="button" data-visit="spot-5" data-name="Student Affairs Office">Mark as Visited</button>
+          </article>
+          <article class="card campus-card">
+            <span class="campus-ico" aria-hidden="true">🍽️</span>
+            <h3>Cafeteria</h3>
+            <p>Affordable meals and an easy place to meet classmates.</p>
+            <button class="btn btn-outline btn-block" type="button" data-visit="spot-6" data-name="Cafeteria">Mark as Visited</button>
+          </article>
+          <article class="card campus-card">
+            <span class="campus-ico" aria-hidden="true">🚌</span>
+            <h3>Transport Point</h3>
+            <p>Shuttle stops, routes, and safe waiting areas.</p>
+            <button class="btn btn-outline btn-block" type="button" data-visit="spot-7" data-name="Transport Point">Mark as Visited</button>
+          </article>
+          <article class="card campus-card">
+            <span class="campus-ico" aria-hidden="true">🎭</span>
+            <h3>Student Society Area</h3>
+            <p>Club rooms, event boards, and society registration.</p>
+            <button class="btn btn-outline btn-block" type="button" data-visit="spot-8" data-name="Student Society Area">Mark as Visited</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 7: AFTER JOINING UNIVERSITY ============ -->
+    <section class="section section-soft" id="after-joining">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Resocialization</span>
+          <h2>Your first week, one small step at a time.</h2>
+          <p class="section-desc">
+            This plan helps students replace old habits and become comfortable with
+            university life.
+          </p>
+
+          <div class="progress-box">
+            <div class="progress-meta">
+              <span class="progress-title">First week progress</span>
+              <span class="progress-count" id="week-count" aria-live="polite">0 of 15 completed · 0%</span>
+            </div>
+            <div class="progress-track" role="progressbar" id="week-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="First week checklist progress">
+              <span class="progress-fill violet" id="week-fill"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="week-grid" id="week-list">
+          <div class="card day-card">
+            <div class="day-head"><span class="day-badge">Day 1</span><span class="day-hint">Arrive &amp; explore</span></div>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-1-1">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Find your department.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-1-2">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Locate your classroom.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-1-3">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Introduce yourself to one classmate.</span>
+            </label>
+          </div>
+
+          <div class="card day-card">
+            <div class="day-head"><span class="day-badge">Day 2</span><span class="day-hint">Get organised</span></div>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-2-1">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Add your courses to your planner.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-2-2">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Check the university portal.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-2-3">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Find the library.</span>
+            </label>
+          </div>
+
+          <div class="card day-card">
+            <div class="day-head"><span class="day-badge">Day 3</span><span class="day-hint">Speak up</span></div>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-3-1">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Ask one academic question.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-3-2">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Join the official class group.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-3-3">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Review your deadlines.</span>
+            </label>
+          </div>
+
+          <div class="card day-card">
+            <div class="day-head"><span class="day-badge">Day 4</span><span class="day-hint">Reach out</span></div>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-4-1">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Contact your academic advisor.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-4-2">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Explore a student society.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-4-3">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Study for one focused hour.</span>
+            </label>
+          </div>
+
+          <div class="card day-card">
+            <div class="day-head"><span class="day-badge">Day 5</span><span class="day-hint">Reflect &amp; plan</span></div>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-5-1">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Review your first week.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-5-2">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Write down one thing you learned.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="check-input" data-group="week" data-id="week-5-3">
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-text">Select your next improvement goal.</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 8: MENTOR SUPPORT ============ -->
+    <section class="section" id="mentor">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Mentor support</span>
+          <h2>You never have to figure it out alone.</h2>
+          <p class="section-desc">
+            Senior students have already made this transition. Ask them a quick question.
+          </p>
+        </div>
+
+        <article class="card mentor-card">
+          <div class="mentor-avatar" aria-hidden="true">AK</div>
+          <div class="mentor-info">
+            <h3>Areeba Khan</h3>
+            <p class="mentor-program">BS Computer Science · 4th Year</p>
+            <ul class="mentor-tags">
+              <li><span class="dot" aria-hidden="true"></span> Status: Available</li>
+              <li>Typically replies in a few minutes</li>
+            </ul>
+          </div>
+          <div class="mentor-action">
+            <button class="btn btn-primary btn-lg" type="button" id="open-chat">💬 Ask a Question</button>
+            <p class="mentor-note">Prototype chat — replies are simulated.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 9: STUDY PLANNER ============ -->
+    <section class="section section-soft" id="planner">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Study planner</span>
+          <h2>Build your university routine.</h2>
+          <p class="section-desc">
+            Add tasks, tick them off, and keep your deadlines in one place. Your list is
+            saved in this browser, so it stays after you refresh.
+          </p>
+        </div>
+
+        <div class="planner-wrap">
+          <form class="card planner-form" id="planner-form" novalidate>
+            <h3>Add a new task</h3>
+            <div class="form-grid">
+              <div class="field">
+                <label for="task-title">Task title</label>
+                <input type="text" id="task-title" name="title" placeholder="e.g. Read chapter 4" autocomplete="off">
+              </div>
+              <div class="field">
+                <label for="task-course">Course name</label>
+                <input type="text" id="task-course" name="course" placeholder="e.g. Sociology 101" autocomplete="off">
+              </div>
+              <div class="field">
+                <label for="task-due">Due date</label>
+                <input type="date" id="task-due" name="due">
+              </div>
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit">Add Task</button>
+            <p class="form-error" id="form-error" role="alert" hidden>Please write a task title first.</p>
+          </form>
+
+          <div class="card planner-list-card">
+            <div class="planner-head">
+              <h3>Your tasks</h3>
+              <span class="status-pill neutral" id="task-count" aria-live="polite">0 tasks</span>
+            </div>
+            <ul class="task-list" id="task-list"></ul>
+            <p class="empty-state" id="task-empty">
+              <span aria-hidden="true">🗒️</span>
+              No tasks yet. Add your first task to start your routine.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 10: WELLBEING CHECK-IN ============ -->
+    <section class="section" id="wellbeing">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Wellbeing check-in</span>
+          <h2>How are you feeling about university?</h2>
+          <p class="section-desc">
+            Choose the option that fits you today. There is no wrong answer.
+          </p>
+        </div>
+
+        <div class="feeling-row" id="feeling-row" role="group" aria-label="Select how you feel about university">
+          <button class="feeling-btn" type="button" data-feeling="Very confident">😄 Very confident</button>
+          <button class="feeling-btn" type="button" data-feeling="Confident">🙂 Confident</button>
+          <button class="feeling-btn" type="button" data-feeling="Unsure">😐 Unsure</button>
+          <button class="feeling-btn" type="button" data-feeling="Stressed">😟 Stressed</button>
+          <button class="feeling-btn" type="button" data-feeling="Very stressed">😰 Very stressed</button>
+        </div>
+
+        <div class="card feeling-response" id="feeling-response" hidden>
+          <span class="feeling-response-ico" id="feeling-ico" aria-hidden="true">💬</span>
+          <div>
+            <p class="feeling-response-title" id="feeling-title">Thanks for sharing.</p>
+            <p id="feeling-text"></p>
+            <p class="disclaimer">
+              This check-in offers friendly study-support suggestions only. It is not
+              medical advice or a diagnosis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 11: ABOUT THE SOCIOLOGY PROJECT ============ -->
+    <section class="section section-soft" id="about-project">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">About the project</span>
+          <h2>How UniBridge connects with sociology.</h2>
+          <p class="section-desc">
+            The prototype applies two core ideas from sociology: socialization and
+            resocialization.
+          </p>
+        </div>
+
+        <div class="card-grid two about-grid">
+          <article class="card about-card">
+            <span class="badge badge-blue">Concept 1</span>
+            <h3>Socialization</h3>
+            <p>
+              Socialization is the process of learning the rules, behavior, and
+              expectations of a group. In this project, students learn how university
+              life works.
+            </p>
+          </article>
+          <article class="card about-card">
+            <span class="badge badge-violet">Concept 2</span>
+            <h3>Resocialization</h3>
+            <p>
+              Resocialization is the process of replacing old habits with new habits
+              when entering a new environment. In this project, students replace college
+              habits with university habits.
+            </p>
+          </article>
+          <article class="card about-card">
+            <span class="badge badge-green">Concept 3</span>
+            <h3>Anticipatory Socialization</h3>
+            <p>
+              This happens before joining university. Students learn about university
+              rules, campus locations, communication, and study expectations.
+            </p>
+          </article>
+          <article class="card about-card">
+            <span class="badge badge-yellow">Concept 4</span>
+            <h3>Resocialization Support</h3>
+            <p>
+              This happens after joining university. Students receive reminders, mentor
+              support, first-week activities, and study-planning tools.
+            </p>
+          </article>
+        </div>
+
+        <div class="timeline" aria-label="Student transition timeline">
+          <div class="timeline-step">
+            <span class="timeline-ico" aria-hidden="true">🎓</span>
+            <span class="timeline-title">College Life</span>
+          </div>
+          <span class="timeline-arrow" aria-hidden="true">→</span>
+          <div class="timeline-step">
+            <span class="timeline-ico" aria-hidden="true">📚</span>
+            <span class="timeline-title">Preparation Before University</span>
+          </div>
+          <span class="timeline-arrow" aria-hidden="true">→</span>
+          <div class="timeline-step">
+            <span class="timeline-ico" aria-hidden="true">🗓️</span>
+            <span class="timeline-title">First Week</span>
+          </div>
+          <span class="timeline-arrow" aria-hidden="true">→</span>
+          <div class="timeline-step highlight">
+            <span class="timeline-ico" aria-hidden="true">🎯</span>
+            <span class="timeline-title">Comfortable University Life</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ SECTION 12: FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#home" data-scroll="home">
+          <span class="brand-mark" aria-hidden="true">U</span>
+          <span class="brand-text">Uni<em>Bridge</em></span>
+        </a>
+        <p class="footer-line">A sociology assignment prototype</p>
+        <p class="footer-line muted">Helping students move from college life to university life</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#home" data-scroll="home">Home</a></li>
+          <li><a href="#prepare" data-scroll="prepare">Prepare</a></li>
+          <li><a href="#planner" data-scroll="planner">Planner</a></li>
+          <li><a href="#about-project" data-scroll="about-project">About Project</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-cta">
+        <h4>Prototype controls</h4>
+        <p class="footer-line muted">Clear saved progress and restore the original demo.</p>
+        <button class="btn btn-outline btn-block" type="button" id="reset-demo-footer">Reset Demo</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year">2026</span> UniBridge · Start university with confidence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ LESSON MODAL ============ -->
+  <div class="modal-overlay" id="lesson-modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="lesson-modal-title">
+      <div class="modal-head">
+        <div>
+          <p class="modal-eyebrow" id="lesson-modal-time">⏱️ Estimated time: 3 min</p>
+          <h3 id="lesson-modal-title">Lesson title</h3>
+        </div>
+        <button class="modal-close" type="button" data-close-modal aria-label="Close lesson">✕</button>
+      </div>
+      <div class="modal-body" id="lesson-modal-body"></div>
+      <div class="modal-foot">
+        <button class="btn btn-ghost" type="button" data-close-modal>Close</button>
+        <button class="btn btn-success" type="button" id="mark-lesson-complete">Mark Lesson Complete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ MENTOR CHAT MODAL ============ -->
+  <div class="modal-overlay" id="chat-modal" hidden>
+    <div class="modal modal-chat" role="dialog" aria-modal="true" aria-labelledby="chat-modal-title">
+      <div class="modal-head chat-head">
+        <div class="chat-person">
+          <span class="mentor-avatar small" aria-hidden="true">AK</span>
+          <div>
+            <h3 id="chat-modal-title">Areeba Khan</h3>
+            <p><span class="dot" aria-hidden="true"></span> Mentor · Available</p>
+          </div>
+        </div>
+        <button class="modal-close" type="button" data-close-modal aria-label="Close chat">✕</button>
+      </div>
+
+      <div class="chat-body" id="chat-body" aria-live="polite">
+        <div class="msg mentor">
+          <p>Hi! I am Areeba, your senior mentor. Ask me anything about starting university. 😊</p>
+        </div>
+      </div>
+
+      <div class="chat-quick" id="chat-quick">
+        <button class="chip" type="button" data-question="How do I find my classroom?">How do I find my classroom?</button>
+        <button class="chip" type="button" data-question="How can I manage assignments?">How can I manage assignments?</button>
+        <button class="chip" type="button" data-question="How can I make friends?">How can I make friends?</button>
+        <button class="chip" type="button" data-question="Where can I ask for help?">Where can I ask for help?</button>
+      </div>
+
+      <form class="chat-input" id="chat-form">
+        <label class="sr-only" for="chat-text">Type your question</label>
+        <input type="text" id="chat-text" placeholder="Type your question…" autocomplete="off">
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
+      <p class="chat-note">Simulated replies for demonstration purposes.</p>
+    </div>
+  </div>
+
+  <!-- ============ TOASTS ============ -->
+  <div class="toast-container" id="toast-container" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
